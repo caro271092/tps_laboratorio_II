@@ -28,11 +28,9 @@ namespace Entidades
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("SUV");
+            sb.AppendLine("---------------------");
+            sb.AppendLine(">>> SUV");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine($"TAMAÑO : {Tamanio}");
-            sb.AppendLine("");
             sb.AppendLine("---------------------");
             return sb.ToString();
         }

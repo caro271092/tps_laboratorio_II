@@ -97,7 +97,7 @@ namespace Entidades
             {
                 foreach (Vehiculo v in t.vehiculos)
                 {
-                    if (vehiculo == v) //estoy usando el == de vehiculo q compara chasis?
+                    if (vehiculo == v)
                     {
                         return t;
                     }

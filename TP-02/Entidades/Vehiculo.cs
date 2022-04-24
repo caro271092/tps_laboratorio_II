@@ -37,10 +37,10 @@ namespace Entidades
         public virtual string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"CHASIS: {chasis}");
-            sb.AppendLine($"MARCA : {marca.ToString()}");
-            sb.AppendLine($"COLOR : {color.ToString()}");
-            sb.AppendLine("---------------------");
+            sb.AppendLine($" CHASIS: {chasis}");
+            sb.AppendLine($" MARCA : {marca.ToString()}");
+            sb.AppendLine($" COLOR : {color.ToString()}");
+            sb.AppendLine($"TAMAÑO : {Tamanio.ToString()}");
             return sb.ToString();
         }
 
@@ -59,10 +59,7 @@ namespace Entidades
         {
             if (!(v1.chasis is null && v2.chasis is null))
             {
-                if (v1.chasis == v2.chasis)
-                {
-                    return true;
-                }
+                return (v1.chasis == v2.chasis);
             }
             return false;
         }

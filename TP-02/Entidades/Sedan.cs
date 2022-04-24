@@ -43,11 +43,10 @@ namespace Entidades
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("SEDAN");
-            sb.AppendLine(base.Mostrar());
-            sb.AppendLine($"TAMAÑO : {Tamanio}");
-            sb.AppendLine($"TIPO : {tipo}");
-            sb.AppendLine("");
+            sb.AppendLine("---------------------");
+            sb.AppendLine(">>> SEDAN");
+            sb.Append(base.Mostrar());
+            sb.AppendLine($"  TIPO : {tipo}");
             sb.AppendLine("---------------------");
             return sb.ToString();
         }
